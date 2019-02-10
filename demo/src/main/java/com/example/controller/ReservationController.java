@@ -17,14 +17,14 @@ import com.example.entity.User;
 import com.example.service.BookService;
 
 @RestController
-public class Reservations {
+public class ReservationController {
 	
 	@Autowired
 	private BookService bookService;
 	
 	private Reservation myBook = new Reservation();
 	private List<Reservation> bookList = new ArrayList<Reservation>();
-	private org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(Reservations.class);
+	private org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(ReservationController.class);
 	
 	
 	@PostMapping(value = "/book/books")
